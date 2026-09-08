@@ -1,153 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Enterprises | Premier Facility Management & Patient Care Karachi</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .hero-bg {
-            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.95)), 
-                        url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syed Enterprises | Corporate Facility Management & Care Services Karachi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-obsidian { background-color: #0d0d0d; }
+    .bg-obsidian-card { background-color: #171717; }
+    .text-gold { color: #d4af37; }
+    .border-gold { border-color: #d4af37; }
+    .bg-gold { background-color: #d4af37; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-obsidian text-gray-200 font-sans">
 
-    <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 bg-slate-900 text-white shadow-xl">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="bg-amber-500 text-slate-900 font-black text-2xl px-3 py-1 rounded">SE</div>
-                <div>
-                    <h1 class="text-xl font-bold tracking-wide text-white">SYED ENTERPRISES</h1>
-                    <p class="text-xs text-amber-400 font-medium tracking-widest uppercase">Excellence in Care & Maintenance</p>
-                </div>
-            </div>
-            <nav class="hidden md:flex space-x-8 font-semibold text-sm">
-                <a href="#services" class="hover:text-amber-400 transition">Services</a>
-                <a href="#calculator" class="hover:text-amber-400 transition">Get Quote</a>
-                <a href="#about" class="hover:text-amber-400 transition">About Us</a>
-                <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
-            </nav>
-            <a href="https://wa.me/923168237198?text=Hello%20Syed%20Enterprises,%20I%20need%20a%20service%20quote." 
-               target="_blank" 
-               class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-5 py-2.5 rounded-lg shadow-lg flex items-center space-x-2 transition">
-                <i class="fab font-bold fa-whatsapp text-lg"></i>
-                <span>0316-8237198</span>
-            </a>
-        </div>
-    </header>
+  <!-- Navigation Bar -->
+  <nav class="border-b border-gray-800 bg-obsidian/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-wider text-gold">SYED ENTERPRISES</div>
+      <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-gray-300">
+        <a href="#services" class="hover:text-gold transition">Services</a>
+        <a href="#coverage" class="hover:text-gold transition">Coverage</a>
+        <a href="#about" class="hover:text-gold transition">About Us</a>
+        <a href="#faq" class="hover:text-gold transition">FAQs</a>
+      </div>
+      <a href="https://wa.me/923168237198" target="_blank" class="bg-gold text-black font-semibold px-5 py-2.5 rounded-full hover:bg-yellow-500 transition text-sm">
+        WhatsApp Booking
+      </a>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-bg text-white py-24 px-6 text-center md:text-left">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-amber-500/30">
-                    Trusted in Karachi Since 2016
-                </span>
-                <h2 class="text-4xl md:text-6xl font-extrabold mt-4 leading-tight">
-                    World-Class Care & Corporate Maintenance
-                </h2>
-                <p class="mt-6 text-lg text-gray-300 leading-relaxed">
-                    Delivering premium janitorial, pest control, medical patient care, and facility maintenance for corporate offices, healthcare facilities, and residences across Karachi.
-                </p>
-                <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                    <a href="#calculator" class="bg-amber-500 hover:bg-amber-600 text-slate-900 text-center font-bold px-8 py-4 rounded-xl shadow-lg transition">
-                        Calculate Estimated Cost
-                    </a>
-                    <a href="#services" class="border border-gray-400 hover:border-white text-center font-semibold px-8 py-4 rounded-xl transition">
-                        Explore Our Services
-                    </a>
-                </div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-2xl">
-                <h3 class="text-2xl font-bold mb-4 text-amber-400">Quick Service Inquiry</h3>
-                <form class="space-y-4">
-                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-slate-800/80 border border-slate-700 text-white placeholder-gray-400 focus:outline-none focus:border-amber-400">
-                    <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg bg-slate-800/80 border border-slate-700 text-white placeholder-gray-400 focus:outline-none focus:border-amber-400">
-                    <select class="w-full px-4 py-3 rounded-lg bg-slate-800/80 border border-slate-700 text-white focus:outline-none focus:border-amber-400">
-                        <option class="text-slate-900">Select Service Required</option>
-                        <option class="text-slate-900">Janitorial & Housekeeping</option>
-                        <option class="text-slate-900">Pest Control & Fumigation</option>
-                        <option class="text-slate-900">Patient & Elderly Care</option>
-                        <option class="text-slate-900">Equipment & Supplies</option>
-                    </select>
-                    <button class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3.5 rounded-lg transition shadow-lg">
-                        Submit Instant Request
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-6 py-24 text-center">
+    <span class="text-gold text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full border border-gold/30 bg-gold/10 inline-block mb-4">
+      Karachi's Premier Facility Management
+    </span>
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight max-w-4xl mx-auto leading-tight">
+      Corporate-Grade Janitorial, Pest Control & Patient Healthcare
+    </h1>
+    <p class="text-gray-400 text-lg max-w-2xl mx-auto mt-6">
+      Delivering vetted, biometric-verified personnel and 24/7 emergency dispatch across DHA, Clifton, Korangi Industrial Area, and all major Karachi sectors.
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+      <a href="tel:+923168237198" class="bg-gold text-black font-bold px-8 py-4 rounded-lg hover:bg-yellow-500 transition">
+        Call Now: +92 316 8237198
+      </a>
+      <a href="#services" class="border border-gray-700 text-white font-medium px-8 py-4 rounded-lg hover:border-gold transition">
+        Explore Services
+      </a>
+    </div>
+  </section>
 
-    <!-- Services Grid -->
-    <section id="services" class="py-20 max-w-7xl mx-auto px-6">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Our Comprehensive Solutions</h2>
-            <p class="text-gray-600 mt-3">Trained professionals, high-grade equipment, and uncompromised quality standards.</p>
-        </div>
+  <!-- Services Grid -->
+  <section id="services" class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-800">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-white">Our Specialized Offerings</h2>
+      <p class="text-gray-400 mt-2">Tailored contracts for homes, corporate towers, and industrial facilities.</p>
+    </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Janitorial -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-500 group-hover:text-white transition">
-                    <i class="fas fa-broom"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Janitorial Services</h3>
-                <p class="text-gray-600 text-sm leading-relaxed mb-4">Routine commercial cleaning, office maintenance, floor polishing, and hygiene maintenance.</p>
-                <span class="text-amber-600 font-semibold text-sm">جانٹریال سروس &rarr;</span>
-            </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="bg-obsidian-card p-8 rounded-xl border border-gray-800 hover:border-gold/50 transition">
+        <div class="text-gold text-3xl mb-4">🧹</div>
+        <h3 class="text-xl font-bold text-white mb-3">Commercial Janitorial & Housekeeping</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Daily/monthly contracts for corporate offices, deep residential tile polishing, and post-construction cleaning.
+        </p>
+        <span class="text-gold text-xs font-semibold uppercase tracking-wider">Deep Cleaning • Floor Polishing</span>
+      </div>
 
-            <!-- Pest Control -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-500 group-hover:text-white transition">
-                    <i class="fas fa-bug"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Pest Control</h3>
-                <p class="text-gray-600 text-sm leading-relaxed mb-4">Complete fumigation, termite treatment, cockroach control, and vector control solutions.</p>
-                <span class="text-amber-600 font-semibold text-sm">پیسٹ کنٹرول &rarr;</span>
-            </div>
+      <!-- Service 2 -->
+      <div class="bg-obsidian-card p-8 rounded-xl border border-gray-800 hover:border-gold/50 transition">
+        <div class="text-gold text-3xl mb-4">🛡️</div>
+        <h3 class="text-xl font-bold text-white mb-3">Fumigation & Pest Control</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Anti-termite piping barriers, odorless sprays for bed bugs & cockroaches, and EPA-compliant sanitization.
+        </p>
+        <span class="text-gold text-xs font-semibold uppercase tracking-wider">Termite Barrier • Gel Spray</span>
+      </div>
 
-            <!-- Patient Care -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-500 group-hover:text-white transition">
-                    <i class="fas fa-user-nurse"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Patient Care</h3>
-                <p class="text-gray-600 text-sm leading-relaxed mb-4">Qualified home nursing, elderly attendant care, post-operative support, and medical assistance.</p>
-                <span class="text-amber-600 font-semibold text-sm">مریضوں کی دیکھ بھال &rarr;</span>
-            </div>
+      <!-- Service 3 -->
+      <div class="bg-obsidian-card p-8 rounded-xl border border-gray-800 hover:border-gold/50 transition">
+        <div class="text-gold text-3xl mb-4">🏥</div>
+        <h3 class="text-xl font-bold text-white mb-3">Medical Healthcare Attendants</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Qualified male and female home patient attendants, elderly care staff, and hospital bedside assistance.
+        </p>
+        <span class="text-gold text-xs font-semibold uppercase tracking-wider">Home Care • Hospital Attendants</span>
+      </div>
+    </div>
+  </section>
 
-            <!-- Supplies -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-500 group-hover:text-white transition">
-                    <i class="fas fa-boxes"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Equipment & Supplies</h3>
-                <p class="text-gray-600 text-sm leading-relaxed mb-4">High-grade janitorial machinery, cleaning chemicals, safety gear, and disposable items.</p>
-                <span class="text-amber-600 font-semibold text-sm">سامان کی فراہمی &rarr;</span>
-            </div>
-        </div>
-    </section>
+  <!-- Key Features & Trust Indicators -->
+  <section id="about" class="bg-obsidian-card py-16 border-y border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+      <div>
+        <h4 class="text-gold text-4xl font-extrabold">100%</h4>
+        <p class="text-white font-semibold mt-2">Vetted & Verified Staff</p>
+        <p class="text-gray-400 text-xs mt-1">Biometric & police character clearance.</p>
+      </div>
+      <div>
+        <h4 class="text-gold text-4xl font-extrabold">24/7</h4>
+        <p class="text-white font-semibold mt-2">Emergency Dispatch</p>
+        <p class="text-gray-400 text-xs mt-1">Rapid SLA deployment across Karachi.</p>
+      </div>
+      <div>
+        <h4 class="text-gold text-4xl font-extrabold">Custom</h4>
+        <p class="text-white font-semibold mt-2">Corporate Contracts</p>
+        <p class="text-gray-400 text-xs mt-1">Flexible daily, weekly, or annual terms.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="bg-slate-900 text-gray-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 text-center md:text-left md:flex md:justify-between items-center">
-            <div>
-                <h4 class="text-white font-bold text-lg">Syed Enterprises Karachi</h4>
-                <p class="text-sm mt-1">Providing reliable facility services across Sindh, Pakistan.</p>
-            </div>
-            <div class="mt-6 md:mt-0 space-x-6">
-                <a href="tel:03168237198" class="text-amber-400 font-bold hover:underline"><i class="fas fa-phone"></i> 0316-8237198</a>
-                <a href="https://syed-enterprises.blogspot.com" class="hover:text-white">Blogspot Portal</a>
-            </div>
-        </div>
-    </footer>
+  <!-- Service Coverage Areas -->
+  <section id="coverage" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-white">Serving All Major Karachi Localities</h2>
+      <p class="text-gray-400 mt-2">Prompt dispatch teams stationed across key commercial and residential hubs.</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3 text-sm">
+      <span class="px-4 py-2 rounded-full bg-obsidian-card border border-gray-800 text-gray-300">DHA Phase 1–8</span>
+      <span class="px-4 py-2 rounded-full bg-obsidian-card border border-gray-800 text-gray-300">Clifton</span>
+      <span class="px-4 py-2 rounded-full bg-obsidian-card border border-gray-800 text-gray-300">Gulshan-e-Iqbal</span>
+      <span class="px-4 py-2 rounded-full bg-obsidian-card border border-gray-800 text-gray-300">PECHS</span>
+      <span class="px-4 py-2 rounded-full bg-obsidian-card border border-gray-800 text-gray-300">Korangi Industrial Area</span>
+      <span class="px-4 py-2 rounded-full bg-obsidian-card border border-gray-800 text-gray-300">North Nazimabad</span>
+      <span class="px-4 py-2 rounded-full bg-obsidian-card border border-gray-800 text-gray-300">Bahria Town Karachi</span>
+    </div>
+  </section>
+
+  <!-- Footer & Direct Call to Action -->
+  <footer class="bg-black border-t border-gray-800 py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <div class="text-xl font-bold text-gold">SYED ENTERPRISES</div>
+        <p class="text-gray-500 text-xs mt-1">Karachi, Sindh, Pakistan • Phone/WhatsApp: +92 316 8237198</p>
+      </div>
+      <div class="flex gap-4">
+        <a href="https://wa.me/923168237198" target="_blank" class="bg-gold text-black font-semibold px-6 py-3 rounded-lg text-sm hover:bg-yellow-500 transition">
+          Book Service via WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
